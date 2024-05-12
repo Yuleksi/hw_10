@@ -1,0 +1,151 @@
+:root{
+    --accent-color:  #FF6336;
+    --accent-color-secondary: rgba(236, 138, 64, 0.64);
+    --accent-color-transparent: rgba(180, 171, 171, 0.9);
+    --secondary-color: #3D3D3D;
+    --main-color:#ffffff;
+    --bg-secondary-color:#FBFBFB;
+    --font-sm:14px;
+    --font-md:16px;
+    --font-xl:18px;
+    --content-width:1440px;
+}
+
+body{
+    font-family: "Varta", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md)
+}
+
+a {
+    font-size: var(--font-md);
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*Header*/
+
+
+.header{
+    margin-top: 30px;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color-transparent);
+    padding-bottom: 18px;
+    margin-left: 51px;
+    margin-right: 51px;
+}
+
+.header__logo,.header__controls{
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.header__controls{
+    display: flex;
+    margin-left: auto;
+}
+
+.header. nav ul{
+    font-size: 15px;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 42px;
+    margin-left: 51px;
+}
+
+.header__btn{
+    display: inline-block;
+margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.btn.btn-success{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    left: 22px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.btn.btn-success:hover{
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);}
+
+/*Banner*/
+
+.banner{
+    margin-top: 97px;
+    width: 1330px;
+
+}
+
+.banner__content{
+    background-color: var(--accent-color-transparent);
+    padding: 18px 75px;
+}
+.banner h1 {
+    width: 552px;
+    height: 210px;
+font-size: 65px;
+
+}
+.banner p{
+    margin-top: 51px;
+    width: 471px;
+    height: 140px;
+    top: 275px;
+ font-size: 25px;
+}
+
+.banner a{
+}
+
+.banner__btn-success{
+    margin-top:50px;
+    margin-right: 10px;
+    width: 160px;
+    height: 60px;
+    top: 20px;
+    font-weight: bold;
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.banner__btn-success:hover{
+    font-weight: bold;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);}
+
+.banner__btn{
+    margin-top:50px;
+    width: 160px;
+    height: 60px;
+    top: 20px;
+    font-weight: bold;
+    }
+
+.banner__btn:hover{
+    font-weight: bold;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
