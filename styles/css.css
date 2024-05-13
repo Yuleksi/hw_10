@@ -105,6 +105,7 @@ margin-right: 10px;
     background-repeat: no-repeat;
     background-position:right ;
 }
+
 .banner h1 {
     width: 552px;
     height: 210px;
@@ -169,12 +170,14 @@ font-size: 65px;
 /*Color__content*/
 
 .color__wrapper{
-display: flex;
+    width: 1440px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
     background-color: var(--accent-color-secondary);
+    margin-bottom: 100px;
 }
 
 .color-icons{
@@ -192,4 +195,102 @@ display: flex;
     font-weight: bold;
     margin-bottom: 70px;
     padding-top: 98px;
+}
+
+/*Block third*/
+
+.third__block,
+.forth__block,
+.fifth__block{
+    width: 1350px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 250px;
+}
+
+.third__block-content{
+    padding-left: 75px;
+    padding-right: 75px;
+    background-image:url("./../assets/img/jpg/blockthird.jpg");
+    background-repeat: no-repeat;
+    background-position:right ;
+}
+
+.third__block h2 {
+    width: 493px;
+    height: 120px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.third__block-text{
+    margin-top: 51px;
+    width: 491px;
+    height: 120px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.active{
+    width: 96px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Forth__block*/
+
+.forth__block{
+    background-image:url("./../assets/img/jpg/block4.jpg");
+    background-repeat: no-repeat;
+    background-position:right ;
+}
+
+.forth__block-content{
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom:30px;
+}
+
+
+.forth__block h2{
+    font-size: 50px;
+    width: 379px;
+    height: 120px;
+}
+
+.forth__block-text{
+    width: 450px;
+    height: 150px;
+font-size: 20px;
+}
+
+/*Fifth block*/
+
+.fifth__block{
+    width: 1290px;
+    height: 632px;
+}
+
+.fifth__block-content{
+    padding-left: 75px;
+    padding-right: 75px;
+    background-image:url("./../assets/img/jpg/dhdh.jpg");
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+.fifth__block h2 {
+    width: 397px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.fifth__block-text {
+    width: 508px;
+    height: 150px;
+    font-size: 20px;
 }
