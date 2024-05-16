@@ -12,11 +12,12 @@
     --font-xxl:20px;
     --font-title:50px;
     --font-icon:25px;
-    --content-width:1420px;
+    --max-width:1440px;
+    --content-width:1290px;
 }
 
 body{
-    font-family: "Varta", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: var(--font-md)
@@ -30,7 +31,9 @@ a {
 }
 
 .container{
-    max-width: var(--content-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*Header*/
@@ -38,18 +41,18 @@ a {
 
 .header{
     margin-top: 30px;
-    max-width: var(--content-width);
+    max-width: var(--max-width);
 }
 
 .header__content{
-    width: var(--content-width);
+    width: var(--max-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--accent-color-transparent);
     padding-bottom: 18px;
-    margin-left: 51px;
-    margin-right: 51px;
+    padding-right: 51px;
+    padding-left: 51px;
 }
 
 
@@ -98,12 +101,13 @@ margin-right: 10px;
     background: var(--secondary-color);
     border-color: var(--secondary-color);}
 
+
+
 /*Banner*/
 
 .banner{
     max-width: var(--content-width);
-    margin-top: 97px;
-    width: 1350px;
+    margin-top: 150px;
     margin-right: 55px;
 }
 
@@ -125,14 +129,12 @@ font-size: 65px;
 .banner__text-top{
     margin-top: 51px;
     font-size: var(--font-icon);
-    width: 471px;
-    height: 140px;}
+    width: 405px;
+    height:140px;}
 
  .banner .banner__description{
      margin-top: 129px;
     max-width: 50%;
-     display: flex;
-     flex-direction: column;
      gap: 10px;
 }
 
@@ -176,22 +178,30 @@ font-size: 65px;
 
 /*Color__content*/
 
+.color__content{
+    max-width: var(--max-width);
+    background-color: var(--accent-color-secondary);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
 .color__wrapper{
-    max-width: var(--content-width);
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color: var(--accent-color-secondary);
     margin-bottom: 100px;
 }
 
 .color-icons{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 70px;
     margin-bottom: 94px;
+    margin-right: 75px;
+    margin-left: 75px;
 }
 
 
@@ -207,14 +217,12 @@ font-size: 65px;
 /*Block third*/
 
 .third__block {
-
-    width: 1350px;
-    margin-left: 75px;
-    margin-right: 75px;
+    max-width: var(--max-width);
     margin-bottom: 150px;
 }
 
 .third__block-content{
+    max-width: var(--content-width);
     padding-left: 75px;
     padding-right: 75px;
     background-image:url("./../assets/img/jpg/blockthird.jpg");
@@ -234,9 +242,8 @@ font-size: 65px;
     max-width: 60%;
     margin-top: 51px;
     width: 491px;
-
     font-size: var(--font-xxl);
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 .active{
@@ -249,21 +256,25 @@ font-size: 65px;
 /*Forth__block*/
 
 .forth__block{
-    width: 1290px;
-    margin-left: 75px;
+    max-width: var(--max-width);
     margin-right: 75px;
+    margin-left: 75px;
     margin-bottom: 150px;
-}
-
-.forth__block-content{
-    padding-left: 75px;
-    padding-right: 75px;
     background-image:url("./../assets/img/jpg/block4.jpg");
     background-repeat: no-repeat;
-    background-position:right ;
-    margin-bottom:30px;
+    background-position: left;
+    position: relative;
 }
 
+
+.forth__block-content{
+    max-width: var(--content-width);
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom:30px;
+    position: relative;
+    left: 50%;
+}
 
 .forth__block h2{
     font-size: var(--font-title);
@@ -275,23 +286,24 @@ font-size: 65px;
 .forth__block-text{
     max-width: 60%;
     width: 450px;
-    height: 150px;
     font-size: var(--font-xxl);
+    margin-bottom: 35px;
 }
+
+
 
 /*Fifth block*/
 
 .fifth__block{
-    width: 1290px;
-    margin-left: 75px;
-    margin-right: 75px;
+    max-width: var(--max-width);
     margin-bottom: 150px;
 }
 
 .fifth__block-content{
+    max-width: var(--content-width);
     padding-left: 75px;
     padding-right: 75px;
-    background-image:url("./../assets/img/jpg/block4.jpg");
+    background-image:url("./../assets/img/jpg/Frame5.jpg");
     background-repeat: no-repeat;
     background-position:right;
 }
@@ -307,32 +319,73 @@ font-size: 65px;
 .fifth__block-text {
     max-width: 60%;
     width: 508px;
-    height: 150px;
     font-size: var(--font-xxl);
+    margin-bottom: 35px;
 }
 
+/*Sixth Block*/
+
+.sixth__block{
+    max-width: var(--max-width);
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 150px;
+    background-image:url("./../assets/img/jpg/Frame6.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position:left;
+}
+
+.sixth__block-content{
+    max-width: var(--content-width);
+    padding-left: 75px;
+    padding-right: 75px;
+    position:relative;
+    left: 50%;
+}
+
+.sixth__block h2 {
+    width: 348px;
+    height: 120px;
+    font-size: var(--font-title);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sixth__block-text {
+    max-width: 60%;
+    width: 520px;
+    height: 120px;
+    font-size: var(--font-xxl);
+    margin-bottom: 35px;
+}
+
+
 /*Color__block-content*/
+
 .color__block{
-    max-width: 1490px;
+    max-width: var(--max-width);
+    margin-left: 75px;
+    margin-right: 75px;
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .color__block-content{
+    max-width: var(--content-width);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1290px;
     background-color: var(--bg-color);
 }
 
 .color__block-part{
     width: 330px;
-    height: 294px;
 }
 
 .color__block-title h2{
@@ -347,12 +400,12 @@ font-size: 65px;
 .color__icon-title{
    font-size: var(--font-icon);
     font-weight: bold;
-    padding-bottom: 20px;
 }
 
 .color__block-description{
     font-size: var(--font-xl);
     width: 303px;
     height: 75px;
-    padding-top: 15px;
+    padding-bottom: 30px;
 }
+
